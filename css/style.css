@@ -1,0 +1,267 @@
+body {
+	overflow-x: hidden;
+}
+
+.company-logo {
+    position: fixed;
+    left: 2em;
+    top: 2em;
+    z-index: 1030;
+}
+
+.company-logo img {
+    height: 50px;
+}
+
+
+
+/*---------- START CUSTOM OVERFLOW -----------*/
+::-webkit-scrollbar {
+    width: 4px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1); 
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #eee; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #DDD; 
+}
+/*----------- END CUSTOM OVERFLOW ------------*/
+
+
+
+/*-------------- START SIDEBAR ---------------*/
+.sidebar {
+    width: 110px;
+    height: 100vh;
+    position: fixed;
+    margin-left: 10px;
+    transition: 0.4s;
+    z-index: 1030;
+    right: 0;
+    background-color: #F5943E !important;
+}
+
+.sidebar-menu {
+    position: relative;
+    height: calc(100vh / 6);
+    border-bottom: 1px solid #fff;
+}
+
+.sidebar-menu:last-child {
+    border-bottom: 0;
+}
+
+.sidebar-button {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: table;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar-button:hover {
+    background-color: #fff;
+    color: #F5943E;
+    transition: 0.3s ease all;
+}
+
+.sidebar-button .menu-item {
+    vertical-align:middle;
+    display: table-cell;
+}
+
+.sidebar-button .menu-item .sidebar-icon {
+    vertical-align:middle;
+}
+/*--------------- END SIDEBAR ----------------*/
+
+
+
+/*----------- START CONTENT GROUP ------------*/
+.content-group {
+    padding-right: 100px;
+}
+/*------------ END CONTENT GROUP -------------*/
+
+
+
+/*---------- START MAIN TITLE PAGE -----------*/
+.main-title-page {
+    background-color: #FFF7F0;
+    margin-bottom: 30px;
+}
+
+.main-title-page-text {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 24px;
+    color: #45505B;
+    margin-bottom: 10px;
+}
+
+.main-text-divider {
+    border-bottom: 1px solid #D2D2D2;
+    margin-left: 45%;
+    margin-right: 45%;
+    align-self: center;
+}
+
+.main-text-divider2 {
+    border-bottom: 5px solid #F5943E;
+    margin-left: 48%;
+    margin-right: 48%;
+    align-self: center;
+    margin-top: -3px;
+}
+/*----------- END MAIN TITLE PAGE ------------*/
+
+
+
+/*-------------- START FOOTER ---------------*/
+.footer-group {
+    background-color: #0F0903;
+    margin-top: 3em;
+}
+
+.footer-logo img {
+    height: 100px;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-menu-divider {
+    background-color: #fff;
+    height: 1px;
+    width: 50px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.footer-text p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer-text a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    color: #F5943E;
+    transition: 0.2s ease all;
+}
+
+.footer-divider {
+    border-bottom: 1px solid #fff;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.footer-copyright p {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+/*--------------- END FOOTER ----------------*/
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*-------------------------------------------------*/
+/*--------------- START MEDIA QUERY ---------------*/
+/*-------------------------------------------------*/
+
+
+/*-------------------------------------------------*/
+
+/*--------------- START MEDIA 991PX --------------*/
+@media screen and (max-width: 991px) {  
+    .company-logo {
+        display: none;
+    }
+
+    .company-logo-mobile {
+        text-align: center;
+        align-content: center;
+    }
+
+    .company-logo-mobile .company-logo-mobile-img {
+        width: 75px !important;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+
+    .navbar-mobile-bottom {
+        background-color: #F5943E;
+    }
+
+    .navbar-mobile-bottom ul li a {
+        border-right: 1px solid #fff;
+        color: #fff;
+    }
+
+    .navbar-mobile-bottom ul li a:hover {
+        background-color: #fff;
+        color: #F5943E;
+    }
+
+    .content-group {
+        padding-right: 0px;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .footer-logo img {
+        margin-bottom: 2em;
+        height: 75px;
+    }
+
+    .footer-title {
+        margin-top: 1em;
+    }
+
+    .footer-copyright p {
+        margin-bottom: 2em;
+    }
+}
+/*---------------- END MEDIA 1024PX ---------------*/
